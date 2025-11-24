@@ -244,3 +244,194 @@ header .links i {
     width: 0; /* Começa com largura 0 */
     transition: width 1.5s ease-in-out; /* Define a animação da largura */
 }
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+/* ----- TELAS MUITO GRANDES (acima de 1500px) ----- */
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1400px;
+  }
+  header img {
+    width: 220px;
+    height: 220px;
+  }
+  header .info h1 {
+    font-size: 36px;
+  }
+}
+
+/* ----- LAPTOPS MÉDIOS (até 1200px) ----- */
+@media (max-width: 1200px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .career-map {
+    padding-right: 0;
+  }
+
+  .sidebar {
+    padding-left: 0;
+    border-left: none;
+    margin-top: 40px;
+  }
+
+  header img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* ----- TABLETS GRANDES (até 992px) ----- */
+@media (max-width: 992px) {
+  header {
+    padding: 20px;
+  }
+
+  header img {
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
+  }
+
+  header .info h1 {
+    font-size: 26px;
+  }
+
+  header .info p {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .about-section p {
+    font-size: 15px;
+  }
+}
+
+/* ----- TABLETS E CELULARES GRANDES (até 768px) ----- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+  }
+
+  header .links a {
+    margin-right: 10px;
+    font-size: 13px;
+  }
+
+  .about-section {
+    padding: 20px;
+  }
+
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 25px;
+  }
+
+  .timeline-item::before {
+    left: -8px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* ----- CELULARES MÉDIOS (até 576px) ----- */
+@media (max-width: 576px) {
+  .container {
+    margin: 10px;
+  }
+
+  header img {
+    width: 120px;
+    height: 120px;
+  }
+
+  header .info h1 {
+    font-size: 22px;
+  }
+
+  header .info p {
+    font-size: 13px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .about-section h2 {
+    font-size: 18px;
+  }
+
+  .about-section p {
+    font-size: 14px;
+  }
+
+  .progress-bar {
+    height: 10px;
+  }
+
+  .skills-group p {
+    font-size: 13px;
+  }
+}
+
+/* ----- CELULARES PEQUENOS (até 430px) ----- */
+@media (max-width: 430px) {
+  header img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .links a {
+    margin: 5px;
+  }
+
+  .timeline-item h3 {
+    font-size: 16px;
+  }
+
+  .timeline-item p {
+    font-size: 14px;
+  }
+}
+
+/* ----- CELULARES MUITO PEQUENOS (até 360px) ----- */
+@media (max-width: 360px) {
+  header img {
+    width: 95px;
+    height: 95px;
+  }
+
+  header .info h1 {
+    font-size: 20px;
+  }
+
+  .download-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 15px;
+  }
+}
